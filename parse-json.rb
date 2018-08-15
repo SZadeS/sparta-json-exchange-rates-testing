@@ -6,6 +6,8 @@ class ParseJSON
     @json_file = JSON.parse(File.read(json_file))
   end
 
+
+
 end
 
 json = ParseJSON.new("json-exchange-rates.json")
