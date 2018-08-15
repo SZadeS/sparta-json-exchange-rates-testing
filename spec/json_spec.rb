@@ -27,10 +27,10 @@ describe 'Create tests for exchange rates json' do
     expect(@first_test.json_file["rates"].length).to eq(31)
   end
   it "should have a very first key of Australian Dollar- AUD" do
-    expect(@first_test.json_file["rates"][0].key).to eq("AUD")
+    expect(@first_test.json_file["rates"].first.key).to eq("AUD")
   end
   it "should have a very last key of ZAR" do
-    expect(@first_test.json_file["rates"].last.key).to eq("ZAR")
+    expect(@first_test.json_file["rates"].keys.last).to eq("ZAR")
   end
 
 
